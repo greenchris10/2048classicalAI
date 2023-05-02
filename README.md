@@ -2,7 +2,7 @@
 
 Introduction
 
-I have always found the topic of Artificial Intelligence interesting, especially when it came to games. I would spend a lot of time during my undergrad watch videos of an AI being trained to play games like Mortal Kombat or Streetfighter. My senior year, I took my first course on AI which was where I was introduced to the minimax algorithm. I learned how it utilized recursion and backtracking to make decisions in problems relating to game theory. Although I understood what the algorithm was used for, I had little knowledge about how to implement it, or how it worked at a high level. I knew enough to fill out a minimax graph, but that was about it.
+I have always found the topic of Artificial Intelligence interesting, especially when it came to games. I would spend a lot of time during my undergrad watching videos of an AI being trained to play games like Mortal Kombat or Streetfighter. My senior year, I took my first course on AI which was where I was introduced to the minimax algorithm. I learned how it utilized recursion and backtracking to make decisions in problems relating to game theory. Although I understood what the algorithm was used for, I had little knowledge about how to implement it, or how it worked at a high level. I knew enough to fill out a minimax graph, but that was about it.
 
 This project was an opportunity for me to further my understanding of the minimax algorithm which I had covered in college. The best way to do that is to practice implementing it on a game with a reasonably sized search space. For this project, I decided to go with the game 2048.
 
