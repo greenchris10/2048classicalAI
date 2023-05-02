@@ -28,15 +28,17 @@ Since I decided to stick with the two-player implementation of the algorithm, I 
 
 When it came to coding the minimax algorithm, I pretty much just followed the logic of this pseudocode:
 
- 
+![Picture1](https://user-images.githubusercontent.com/120329214/235756592-4de059ec-b1e0-4a64-a810-8c79c752875b.png)
 
 Heuristic
 The portion of this project that I spent the most amount of time on, was figuring out what heuristic function I wanted to use. After doing numerous amounts of research, I reached the conclusion that there wasn’t a “meta” heuristic that was used for the game 2048. Most people used a matrix that had higher weights in the corners. They would get the sum product of the matrix and the game board and use that as the heuristic value. The matrix is supposed to reward moves that result with larger valued tiles in the corner. These particular game-states provide the best opportunity of winning since the max tiles can remain in one specific location the duration of the game. 
- 
+
+![Picture2](https://user-images.githubusercontent.com/120329214/235756860-445a9d8b-864d-4e22-be4e-a57a8b64c14f.png)
 
 The other heuristic function I found rewards moves that result in more empty spaces on the board. The logic here is that when there is more space available, there are more potential moves that can be made. More space on the board also means that we are rewarding moves that merge multiple tiles.
 
- 
+<img width="181" alt="Picture3" src="https://user-images.githubusercontent.com/120329214/235757017-b4bf6491-39e2-48f2-91b9-c52e0c17ced6.png">
+
 I wanted to use a heuristic function that encompassed all the traits that were listed above.  I slightly altered the heuristic function used in one research paper which left me with the following equation:
 
 H = A*E – B*D – C*P
@@ -46,6 +48,8 @@ A, B, and C are all constants. E is the number of empty weights on the board, D 
 Results and Analysis
 
 For my project, I ran six trials. Each trial I changed one parameter to see how it affected the results. The way I evaluated each trial was by looking at the number of nodes expanded, the number of nodes generated, and the largest tile. 
+
+<img width="635" alt="Screenshot 2023-05-02 at 2 41 34 PM" src="https://user-images.githubusercontent.com/120329214/235757295-0a42897c-cbc8-47c3-8089-649d8a81edf7.png">
 
 Based on the data, I think that the results are what I’d expect. The greater the depth size, the greater the number of nodes generated. I was surprised to see that the number of nodes expanded did not increase with depth size. I think that this makes sense due to the game being able to make better decisions by looking further ahead into the future.
 
